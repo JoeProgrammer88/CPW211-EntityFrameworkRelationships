@@ -13,6 +13,17 @@ namespace CPW211_EntityFrameworkRelationships
         public string FullName { get; set; } = null!;
 
         public List<Course> Courses { get; set; }
+
+        public Advisor AssignedAdvisor { get; set; }
+    }
+
+    public class Advisor
+    {
+        public int AdvisorId { get; set; }
+
+        public string Email { get; set; }
+
+        public List<Student> AssignedStudent { get; set; }
     }
 
     public class Course
