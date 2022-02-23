@@ -23,5 +23,7 @@ namespace CPW211_EntityFrameworkRelationships
         }
 
         public DbSet<Student> Students { get; set; }
+
+        public DbSet<Course> Courses { get; set; }
     }
 }
